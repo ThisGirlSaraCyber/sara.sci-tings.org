@@ -19,7 +19,7 @@ nav ul li {
     display: inline-block;
     list-style-type: none;
 }
- 
+
 /* Create a style for the first level items */
 nav > ul > li > a {
     color: #000;
@@ -30,8 +30,15 @@ nav > ul > li > a {
     text-decoration: none;
 }
 
-h1{
+/* Change the background color when mouse over items */
+nav a:hover {
+    background-color: #ca96fd;
+}
 
+h1{
+  color: #9696fd;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
 }
 
 hr{
