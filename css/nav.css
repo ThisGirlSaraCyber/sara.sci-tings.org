@@ -48,16 +48,12 @@ h1{
 
 h2{
   color: #9696fd;
-  -webkit-text-stroke-width: 0.2px;
-  -webkit-text-stroke-color: black;
+  /* -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black; */
 }
 
 hr{
     background-color: #9696fd;
     border-width:0px;
     height:8px;
-}
-
-navali{
-    /* font-weight: bold; */
 }
