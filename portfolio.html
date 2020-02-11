@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
 	<title>Sara Da Costa</title>
-	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="icon" type="image/png" href="img/flower2.png">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -31,7 +32,7 @@
 	<hr>
 	<div class="card-deck mx-5">
 		<div class="card" style="width: 18rem;">
-			<img src="img/sci-tings.png" class="card-img-top" alt="Sci-Tings.org screen shot">
+			<img src="img/sci-tings.png" class="card-img-top" alt="Sci-Tings.org screen shot" >
 
 			<div class="card-body">
 				<h5 class="card-title"><b>Sci-Tings</b></h5>
@@ -40,21 +41,44 @@
 				<a href="https://sci-tings.org" class="btn btn-primary" target="_blank">Go to sci-tings.org</a>
 				<br><br>
 				
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#awsModal">View AWS architectural diagram</button>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#awsModal">View AWS diagram</button>
 				</center>
 				<div id="awsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  					<div class="modal-dialog">
+  					<div class="modal-dialog mw-100 w-75">
     					<div class="modal-content">
-        					<div class="modal-body">
+        					<div class="modal-body">        						
         						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            					<img src="img/architectural-diagram.png" class="img-responsive" length="900" width="450">
-            					<center><a href="img/architectural-diagram.png" class="btn btn-primary" target="_blank">View in new window</a></center>
-        					</div>
-    					</div>
-  					</div>
-				</div>
+        						<h1 align="center"> Architectural Diagram</h1>
+        						<div class="row">
+  									<div class="column">
+  										<img src="img/architectural-diagram.png" class="img-responsive" id="modal-image">
+            							<br><br>
+            							<a href="img/architectural-diagram.png" class="btn btn-primary" target="_blank" style="margin-left: 225px;">View in new window</a>		
+  									</div>
+  									<div class="column">
+  										<p> This project was built using the following AWS tools:</p>
+  										<ul>
+  											<li>S3</li>
+  											<li>Route53</li>
+  											<li>CloudFront</li>
+  											<li>CodePipeline</li>
+  											<li>CodeBuild</li>
+  											<li>Lambda</li>  											
+  										</ul>
+  										<p> The goal of this project is to learn web development (HTML/CSS/JavaScript), deploying websites using AWS, and data science in R and Python. The goal of Sci-Tings is to create a virtual data science laboratory for users to share, create, and discuss their workflows in a centralized place. </p> 
+  										<center><img src="img/aws.png" height="300" width="500" /></center>
+  										<center><img src="img/webstack.png" height="300" width="500" /></center>
+  									</div>
+  																								
+								</div>     
+							</div>  
+
+        				</div>
+    				</div>
+  				</div>
 			</div>
 		</div>
+		
 
 		<div class="card" style="width: 18rem;">
 			<img src="img/dedp.jpg" class="card-img-top" alt="MIT dedp logo">
@@ -67,7 +91,7 @@
 		</div>
 
 		<div class="card" style="width: 18rem;">
-			<img src="img/r.png" class="card-img-top" alt="R logo">
+			<img src="img/r.png" class="card-img-top" alt="R logo" width="65%" height="50%">
 
 			<div class="card-body">
 				<h5 class="card-title">R Programming</h5>
@@ -85,14 +109,23 @@
 				<a href="#" class="btn btn-primary">See more</a>
 			</div>
 		</div>
+		<div class="card" style="width: 18rem;">
+			<img src="img/job-card.png" class="card-img-top" alt="Job picture" width="65%" height="60%">
+
+			<div class="card-body">
+				<h5 class="card-title">Benteler Steel/Tube</h5>
+				<p class="card-text">Currently, I'm working as a data scientist at Benteler Steel/Tube where I use KNIME, R, Python, and SQL Server to analyze steel tube data.</p>
+				<a href="#" class="btn btn-primary">See more</a>
+			</div>
+		</div>
 	</div>	
 	<hr>
 	<footer>
-		<a href="https://github.com/thisgirlsaracyber" class="icon-block" target="_blank" >
-    		<i class="fa fa-github fa-3x" id="footer-icon"></i>    	
+		<a href="https://github.com/thisgirlsaracyber" class="icon-block" target="_blank"  id="footer-icon">
+    		<i class="fa fa-github fa-3x"></i>    	
 		</a>
-		<a href="https://www.linkedin.com/in/saradacosta/" class="icon-block" target="_blank">
-    		<i class="fa fa-linkedin-square fa-3x" aria-hidden="true" id="footer-icon"></i>    	
+		<a href="https://www.linkedin.com/in/saradacosta/" class="icon-block" target="_blank"  id="footer-icon">
+    		<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>    	
 		</a>
 		<a href="https://www.youtube.com/channel/UCDSAdNSHrXETsRTIWHXJ5xg" class="icon-block" target="_blank" id="footer-icon">
     		<i class="fa fa-youtube fa-3x" aria-hidden="true"></i>    	
@@ -100,10 +133,9 @@
 		<a href="mailto: thisgirlsara.cyber@gmail.com" class="icon-block" target="_blank" id="footer-icon">
     		<i class="fa fa-envelope fa-3x" aria-hidden="true"></i>    	
 		</a>
-
 		<br>
 		<strong>SDC - 2020</strong>
-	</footer>  
-	<script src="script.js"></script>
+	</footer> 
+	<script src="js/script.js"></script>
 </body>
 </html>

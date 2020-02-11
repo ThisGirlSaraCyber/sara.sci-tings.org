@@ -2,6 +2,7 @@ body{
     /*margin: 10px;*/
     /*padding: 5px;*/
     font-size: 15px;
+    background-color: #fdfd96 !important;
 }
 
 nav {
@@ -44,10 +45,12 @@ h1{
   color: #9696fd;
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: black;
+
 }
 
 h2{
   color: #9696fd;
+  margin-left: 10px;
   /* -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: black; */
 }
@@ -60,6 +63,7 @@ hr{
 
 p{
   font-family:Arial;
+  margin-left: 15px;
 }
 
 li{
@@ -90,9 +94,10 @@ li{
 
 .dark,
 .dark * {
-    background-color: #222;
+    background-color: #222 !important;
     color: #e6e6e6;
     border-color: #e6e6e6;
+
 }
 
 footer{
@@ -104,10 +109,33 @@ ul > li{
 }
 
 #footer-icon{
-    background-color:white;
+    background-color: #fdfd96;
     color:black;
+    text-decoration: none;
+    margin-right: 10px;
 }
 
 strong{
     color:#9696fd;
+}
+
+#modal-image{
+    width:650px;
+    border:1px solid black;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img{
+    margin-left: 10px;
 }
