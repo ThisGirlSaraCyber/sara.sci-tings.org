@@ -137,6 +137,7 @@ strong{
   clear: both;
 }
 
-img{
-    /*margin-left: 10px;*/
+#container { /* div you want to stretch */
+    height: 100%; /** IE 6 */
+    min-height: 100%;
 }
