@@ -2,7 +2,6 @@ body{
     /*margin: 10px;*/
     /*padding: 5px;*/
     font-size: 15px;
-    background-color:#fdfd96;
 }
 
 nav {
@@ -33,9 +32,9 @@ nav > ul > li > a {
 }
 
 /* Change the background color when mouse over items */
-nav a:hover {
+/*nav a:hover {
     color: #ca96fd;
-}
+}*/
 
 a:hover{
   background-color: #fdca96 ;
@@ -102,4 +101,13 @@ footer{
 
 ul > li{
     margin-top: 10px;
+}
+
+#footer-icon{
+    background-color:white;
+    color:black;
+}
+
+strong{
+    color:#9696fd;
 }
